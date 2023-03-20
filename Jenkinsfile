@@ -12,7 +12,7 @@ node {
                 catchError(buildResult: 'SUCCESS', stageResult: 'FAILURE') {
                     withCredentials([usernamePassword(credentialsId: 'GITHUB-CRED', passwordVariable: 'GIT_PASSWORD', usernameVariable: 'GIT_USERNAME')]) {
                         //def encodedPassword = URLEncoder.encode("$GIT_PASSWORD",'UTF-8')
-                        sh "git config user.lukenjang@gmail.com"
+                        sh "git config user.email lukenjang@gmail.com"
                         sh "git config user.name depuis2031"
                         //sh "git switch main"
                         sh "cat deployment.yaml"
