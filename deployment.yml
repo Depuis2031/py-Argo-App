@@ -16,7 +16,7 @@ spec:
         app: pythonapp
     spec:
       containers:
-      - image: depuis2031/python-app:13
+      - image: depuis2031/python-app:14
         name: pythonapp
         resources: {}
 status: {}
